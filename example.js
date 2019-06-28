@@ -38,7 +38,7 @@
       // optionally change the default timeout duration
       // timeout: 250,
       // optionally add a function that runs when the event is triggered but locked
-      // lockoutEffect: () => alert('locked out'),
+      // triggeredWhileLockedEffect: () => alert('locked out'),
     });
 
     menuBtnElement.addEventListener('click', toggleNav);
