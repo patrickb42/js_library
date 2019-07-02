@@ -1,5 +1,5 @@
 (() => {
-  function startStopActionFunctionFactory({
+  function debouncerFactory({
     startedEffect,
     durringEffect, // this should probably be a rate-limiting wrapper function
     stoppedEffect,
@@ -27,7 +27,7 @@
     };
   }
 
-  const exampleFunction = startStopActionFunctionFactory({
+  const exampleFunction = debouncerFactory({
     startedEffect: () => console.log('started'), // optional
     durringEffect: () => console.log('durring'), // optional
     stoppedEffect: () => console.log('ended'),   // optional
