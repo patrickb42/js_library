@@ -16,7 +16,7 @@
   // }
 
   // another way to do this, but has drawbacks compared to above versions
-  // function compose1(...fns) {
+  // function compose(...fns) {
   //   return fns.reduceRight((acc, curr) => {
   //     return (value) => {
   //       return curr(acc(value));
