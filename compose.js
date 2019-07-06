@@ -40,7 +40,8 @@
 
   const composedFunction = compose(adderFactory(1),
     multiplierFactory(2),
-    adderFactory(-3));
+    adderFactory(-3)
+  );
 
   // the same as doing console.log(adderFactory(1)(multiplierFactory(2)(adderFactory(-3)(100))));
   console.log(composedFunction(100));
